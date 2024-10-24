@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>For Thel Thel EiPoPo</strong>
+                        <p>
+                            သဲသဲရေချစ်တယ်လေနော် စိတ်ဆိုးပြေပါ သဲသဲကိုအရမ်းချစ်တယ်လေနော် ကိုကိုအပစ်လုပ်ထားလို့ စိတ်ဆိုးနေတာဆိုရင်ကိုကို့ကိုခွင့်လွှတ်ပေးပါနော် ဒီတိုင်းစိတ်မကြည်နေတာဆိုလဲကိုကို့ကိုပြောပြပါနော်ချစ်တယ်အရမ်းကိုပဲအဲ့တာကြောင့်စိတ်ဆိုးပြေပါတော့နော် <br>
+                            သဲသဲရေ ဒါလေးပို့တာနောက်ကျရင်တောင်းပန်ပါတယ်နော် code ကကိုယ်တိုင်ရေးထားထားတာရယ် (အရမ်းချစ်လို့လေ)online ပေါ်တင်တာရယ်ကြောင့်ကြာသွားနိုင်တယ်အရမ်းချစ်တာမလို့စိတ်ဆိုးပြေပါတော့နော်
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
