@@ -233,3 +233,53 @@ span {
       height: 10px;
   }
 }
+
+@media all and (max-width: 485px) {
+  .container {
+    height: 90vh; /* Slightly taller for better spacing */
+  }
+
+  p {
+    font-size: 6px;
+  }
+
+  .envelope-wrapper > .envelope {
+    width: 220px; /* Slightly larger than 200px */
+    height: 160px; /* Slightly larger than 150px */
+  }
+
+  .envelope-wrapper > .envelope::before {
+    border-top: 90px solid var(--envelope-tab); /* Adjusted top border */
+    border-right: 110px solid transparent; /* Adjusted right border */
+    border-left: 110px solid transparent; /* Adjusted left border */
+  }
+
+  .envelope-wrapper > .envelope::after {
+    border-top: 90px solid transparent; /* Adjusted top border */
+    border-right: 110px solid var(--envelope-cover); /* Adjusted right border */
+    border-bottom: 80px solid var(--envelope-cover); /* Adjusted bottom border */
+    border-left: 110px solid var(--envelope-cover); /* Adjusted left border */
+  }
+
+  .envelope > .letter {
+    width: 70%; /* Increased width for better fit */
+    height: 80%; /* Increased height for better fit */
+    padding: 12px 5px; /* Adjusted padding */
+  }
+
+  .envelope > .letter > .text {
+    font-size: 7px; /* Adjust font size for better readability */
+  }
+
+  .heart {
+    margin-top: -70px; /* Adjusted margin */
+    width: 12px; /* Increased size */
+    height: 12px; /* Increased size */
+  }
+
+  .heart:before, 
+  .heart:after {
+    width: 12px; /* Increased size */
+    height: 12px; /* Increased size */
+  }
+}
